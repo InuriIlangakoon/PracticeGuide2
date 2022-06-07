@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokeminActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pokemon Details"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TableLayout
+        android:layout_width="357dp"
+        android:layout_height="638dp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="59dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickPokemon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bulbasaur"
+                android:tag="bulbasaur" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickPokemon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pikachu"
+                android:tag="pikachu" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickPokemon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/charmender"
+                android:tag="charmender" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickPokemon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/squirtile"
+                android:tag="squirtile" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
